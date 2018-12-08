@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div class="footer" name="footer">
         <div class="container footer-top">
             <div class="row">
                 <div class="col-md-4">
@@ -53,5 +53,7 @@
 </script>
 
 <style scoped>
-
+a{
+    padding: 5px 0;
+}
 </style>
