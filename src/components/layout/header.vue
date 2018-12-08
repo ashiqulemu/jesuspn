@@ -54,8 +54,9 @@
                             </li>
                         </ul>
                         <button class="add-listing">  + Add Listing </button>
-                        <i class="far fa-user user-icon"></i>
-
+                        <a href="">
+                            <i class="fa fa-user text-white nav"></i>
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -71,5 +72,7 @@
 </script>
 
 <style scoped>
-
+.nav .fa-user{
+    padding-left: 35px;
+}
 </style>
