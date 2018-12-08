@@ -14,15 +14,34 @@
                                 <router-link to="/" class="nav-link">Home</router-link>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href=" " id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Items</a>
+                                <a class="nav-link dropdown-toggle"
+                                   href=" "
+                                   id="dropdown04"
+                                   data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">Explore
+                                </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="#">Explore Item</a>
+                                    <a class="dropdown-item" href="#">Explore Item</a>
+                                    <a class="dropdown-item" href="#">Explore Item</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                   href=" " id="dropdown05"
+                                   data-toggle="dropdown"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">Listings
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown05">
+                                    <a class="dropdown-item" href="#">Listings Item</a>
+                                    <a class="dropdown-item" href="#">Listings Item</a>
+                                    <a class="dropdown-item" href="#">Listings Item</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Destination</a>
+                                <a class="nav-link" href="#">Destinations</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Pages</a>

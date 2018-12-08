@@ -1,5 +1,14 @@
+
 .site-header {
-  background: #242424; }
+  background: $brand-secondary;
+
+  .dropdown-menu{
+    background: #fe575f;
+  }
+  .dropdown-item:hover{
+    background: #242424;
+  }
+}
 .site-header .add-listing {
   border: 1px solid #f3f3f3;
   padding: 4px 13px;
@@ -7,11 +16,16 @@
   color: #E7E7E7;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  border-radius: 2px; }
+  border-radius: 2px;
+}
 .site-header .user-icon {
   color: #fdfafa;
   font-size: 19px;
-  margin-left: 16px; }
+  margin-left: 16px;
+}
 .site-header .navbar .navbar-nav li a {
   padding-right: 35px;
-  color: #FCFCFC; }
+  color: #FCFCFC;
+}
+
+
