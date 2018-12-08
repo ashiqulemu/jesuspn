@@ -8,6 +8,7 @@
                         We are an online marketplace platform for booking social group trips.
                         Our service is more affordable and convenient than hotel.
                     </p>
+                    <i class=" fa rounded-icon fa-facebook"></i>
                 </div>
                 <div class="col-md-4">
                     <div class="row">
@@ -52,6 +53,6 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

@@ -4,7 +4,6 @@
 @import "footer.scss";
 
 
-
 p {
   color: $text-color-normal;
   &.dark {
@@ -32,4 +31,19 @@ p {
 .text-own-center{
   text-align: center;
   margin: 0 auto;
+}
+
+.rounded-icon{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  @extend .rounded-circle;
+  padding: 7px 11px;
+  color: white;
+  border-radius: 50% !important;
+  background: $brand-primary;
+  height: 31px;
+  width: 31px;
 }
