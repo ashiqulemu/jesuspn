@@ -1,9 +1,19 @@
-$brand-primary:#fe575f;
+$primary: #fe575f;
+$brand-primary:$primary;
 $brand-secondary:#242422;
 $text-color-normal: #8e8e8e;
 $text-color-black: black;
 $input-border-radius: 0;
 
-.form-control{
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+
+$btn-primary-color: $primary;
+
+.btn{
+  border-radius: 0!important;
+}
+input,select.form-control{
   height: calc(2.65rem + 2px) !important;
 }
