@@ -3,7 +3,9 @@
         <section class="site-header">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-dark">
-                    <a class="navbar-brand" href="#">logo here</a>
+                    <a class="navbar-brand" href="#">
+                        <img src="../../assets/images/color_logo.png" width="26%">
+                    </a>
                     <button class="navbar-toggler" type="button"
                             data-toggle="collapse"
                             data-target="#navbarsExample04"
