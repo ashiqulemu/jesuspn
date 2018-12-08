@@ -4,7 +4,7 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-dark">
                     <a class="navbar-brand" href="#">
-                        <img src="../../assets/images/color_logo.png" width="26%">
+                        <img src="../../assets/images/color_logo.png" >
                     </a>
                     <button class="navbar-toggler" type="button"
                             data-toggle="collapse"
