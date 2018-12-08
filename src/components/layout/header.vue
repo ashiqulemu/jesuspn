@@ -3,9 +3,9 @@
         <section class="site-header">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-dark">
-                    <a class="navbar-brand" href="#">
+                    <router-link :to="{name:'home'}" class="navbar-brand" href="#">
                         <img src="../../assets/images/color_logo.png" >
-                    </a>
+                    </router-link>
                     <button class="navbar-toggler" type="button"
                             data-toggle="collapse"
                             data-target="#navbarsExample04"
