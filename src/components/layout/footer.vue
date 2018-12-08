@@ -53,7 +53,5 @@
 </script>
 
 <style scoped>
-a{
-    padding: 5px 0;
-}
+
 </style>
