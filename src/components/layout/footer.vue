@@ -19,7 +19,7 @@
                         </div>
                         <div class="col footer-terms">
                             <h5 class="hide"></h5>
-                            <a href="#">Terms Of Use</a>
+                            <router-link :to="{name:'termsCondition'}">Terms Of Use</router-link>
                             <a href="#">Privacy Policy</a>
                             <a href="#">Copyright Policy</a>
                         </div>
