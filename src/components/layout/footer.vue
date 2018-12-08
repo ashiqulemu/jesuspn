@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <div class="container footer">
+    <div class="footer">
+        <div class="container footer-top">
             <div class="row">
                 <div class="col-md-4">
-                    <h1>LOGO</h1>
+                    <img src="../../../src/assets/images/logo_color_black.png">
                     <p>
                         We are an online marketplace platform for booking social group trips.
                         Our service is more affordable and convenient than hotel.
