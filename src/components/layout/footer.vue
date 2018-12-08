@@ -15,6 +15,7 @@
                             <h5>USEFUL LINKS</h5>
                             <a href="#">About Us</a>
                             <a href="#">Help ?</a>
+                            <router-link :to="{name:'contact'}">contact</router-link>
                             <a href="#">Contact Us</a>
                         </div>
                         <div class="col footer-terms">
