@@ -13,15 +13,15 @@
                     <div class="row">
                         <div class="col">
                             <h5>USEFUL LINKS</h5>
-                            <p>About Us</p>
-                            <p>Help ?</p>
-                            <p>Contact Us</p>
+                            <a href="#">About Us</a>
+                            <a href="#">Help ?</a>
+                            <a href="#">Contact Us</a>
                         </div>
-                        <div class="col">
+                        <div class="col footer-terms">
                             <h5 class="hide"></h5>
-                            <p>Terms Of Use</p>
-                            <p>Privacy Policy</p>
-                            <p>Copyright Policy</p>
+                            <a href="#">Terms Of Use</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Copyright Policy</a>
                         </div>
                     </div>
                 </div>
