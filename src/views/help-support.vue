@@ -6,12 +6,14 @@
         <div class="container">
             <div class="row">
                 <div class="help-content">
-                    <h2 class="text-own-center">Help & Support</h2>
-                    <p class="text-own-center">There are many Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <h3 class="text-own-center">Help & Support</h3>
+                    <p class="text-own-center">
+                        There are many Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Asperiores beatae corporis dicta dolore, dolorem doloremque eius eligendi excepturi,
                         iusto magni maiores minus molestiae nobis nulla officia tempora vel voluptas! Libero. Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Assumenda fugiat fugit laboriosam rem veritatis? Assumenda, commodi
-                        cumque deserunt dolorem dolores dolorum ducimus, ea eaque in, molestiae molestias quo ratione veritatis.</p>
+                        cumque deserunt dolorem dolores dolorum ducimus, ea eaque in, molestiae molestias quo ratione veritatis.
+                    </p>
                 </div>
 
             </div>
@@ -41,7 +43,7 @@
     }
     .help-content{
         padding: 20px;
-        h2{
+        h3{
             padding:10px;
         }
         border: 1px solid #e9e9e9;
