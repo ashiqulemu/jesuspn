@@ -11,6 +11,48 @@
                             gallery
                         </div>
                     </div>
+                    <br>
+                    <div class="card-header" style="border-bottom: none">
+                        <div class="row justify-content-around">
+                            <span class="active">Description</span>
+                            <span>Amenities</span>
+                            <span>Cancellation Policy</span>
+                            <span>The Host & Location</span>
+                            <span>Review</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4><i class="fas fa-map-marker-alt text-primary"></i> Fuerteventura Spain</h4>
+                            <p class="text-black-50  strong">Date Trip-Sharing: 31 Oct 2018 - 02 Nov 2018</p>
+                            <p>asdfasdfasdf</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-body">
+                            asdf
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-body">
+                            asdf
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-body">
+                            asdf
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-body">
+                            asdf
+                        </div>
+                    </div>
                 </div>
                 <div class="col-4">
                     <div class="card" >
@@ -82,6 +124,11 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+    .experience{
+        padding: 51px 0;
+    }
+.active{
+    color: #fe575f;
+}
 </style>
