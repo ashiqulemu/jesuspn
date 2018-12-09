@@ -5,6 +5,8 @@ import About from './views/About.vue'
 import Contact from './views/Contact.vue'
 import HelpSupport from './views/help-support.vue'
 import TermsCondition from './views/terms-condition.vue'
+import Experience from './views/Experience.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -40,5 +42,11 @@ export default new Router({
           name: 'termsCondition',
           component: TermsCondition
       },
+      {
+          path: '/experiences',
+          name: 'experiences',
+          component: Experience
+      },
+
   ]
 })
