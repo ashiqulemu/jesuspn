@@ -32,13 +32,29 @@
                     <br>
                     <div class="card">
                         <div class="card-body">
-                            asdf
+                            <h4>Master Details</h4>
+                            <div class="row">
+                                <div class="col-3">
+                                    image
+                                </div>
+                                <div class="col-9">
+                                    test
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <br>
                     <div class="card">
                         <div class="card-body">
-                            asdf
+                            <h4>Interests</h4>
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="btn btn-outline-primary">Ourdoors Events</button>&nbsp;
+                                    <button class="btn btn-outline-primary">Ourdoors Events</button>&nbsp;
+                                    <button class="btn btn-outline-primary">Ourdoors Events</button>&nbsp;
+                                    <button class="btn btn-outline-primary">Ourdoors Events</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <br>
