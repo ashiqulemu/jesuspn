@@ -12,13 +12,13 @@
                         Start the trip
                     </button>
                     <a href="" class="link">
-                        Entre más compartas más posibiladestienes de ganar.
+                        Entre más compartas más posibilades tienes de ganar.
                     </a>
                 </div>
             </div>
             <div class="col">
                 <div class="box text-white">
-                        ¿Eres solo-traveller?, quieres vivir laexperiencia de compartir tu viaje con personas que tengan tus mismasafinidades e intereses.
+                        ¿Eres solo-traveller?, quieres vivir la experiencia de compartir tu viaje con personas que tengan tus mismas afinidades e intereses.
                 </div>
             </div>
         </div>
