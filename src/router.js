@@ -6,6 +6,7 @@ import Contact from './views/Contact.vue'
 import HelpSupport from './views/help-support.vue'
 import TermsCondition from './views/terms-condition.vue'
 import Experience from './views/Experience.vue'
+import Basic from './views/basic.vue'
 
 Vue.use(Router)
 
@@ -47,6 +48,11 @@ export default new Router({
           name: 'experiences',
           component: Experience
       },
+      {
+          path: '/basic',
+          name: 'basic',
+          component: Basic
+      },
 
-  ]
+]
 })
