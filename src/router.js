@@ -6,13 +6,13 @@ import Contact from './views/Contact.vue'
 import HelpSupport from './views/help-support.vue'
 import TermsCondition from './views/terms-condition.vue'
 import Experience from './views/Experience.vue'
-import Basic from './views/basic.vue'
+import Basic from './views/main-step.vue'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  base: process.env.BASE_URL,
+  // base: process.env.BASE_URL,
   routes: [
       {
         path: '/',
@@ -49,7 +49,7 @@ export default new Router({
           component: Experience
       },
       {
-          path: '/basic',
+          path: '/main-form',
           name: 'basic',
           component: Basic
       },
