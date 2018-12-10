@@ -24,7 +24,7 @@
 					  <img src="../../../src/assets/images/booking.png">
 					  <h3>no free</h3>
 				  </div>
-				  <ul class="cross-bulet">
+				  <ul class="cross-bullet">
 					  <li><div>X</div></li>
 					  <li><div>X</div></li>
 					  <li><div>X</div></li>
@@ -39,7 +39,7 @@
 					  <img src="../../../src/assets/images/airbnb.png">
 					  <h3>15% free</h3>
 				  </div>
-				  <ul class="cross-bulet">
+				  <ul class="cross-bullet">
 					  <li><div>X</div></li>
 					  <li><div>X</div></li>
 					  <li><div>X</div></li>
@@ -53,7 +53,7 @@
 					  <img src="../../../src/assets/images/home-away.png">
 					  <h3>10% free</h3>
 				  </div>
-				  <ul class="cross-bulet">
+				  <ul class="cross-bullet">
 					  <li><div>X</div></li>
 					  <li><div>X</div></li>
 					  <li><div>X</div></li>
@@ -93,7 +93,7 @@
 				margin:10px;
 				background:$theme;
 				padding: 0 0 28px 0;
-				.cross-bulet{
+				.cross-bullet{
 					padding: 0;
 					display: flex;
 					align-items: center;
@@ -159,7 +159,6 @@
 					 flex: 1;
 					 background:#EAF3F0 ;
 				 }
-			 
 			}
 		}
 	}
