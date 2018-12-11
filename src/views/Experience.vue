@@ -35,7 +35,7 @@
                             <h4>Master Details</h4>
                             <div class="row">
                                 <div class="col-3">
-                                    image
+                                    <img src="https://via.placeholder.com/150" class="img-fluid">
                                 </div>
                                 <div class="col-9">
                                     test
@@ -60,13 +60,58 @@
                     <br>
                     <div class="card">
                         <div class="card-body">
-                            asdf
+                            <h4>Perticipants</h4>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="https://via.placeholder.com/150" class="img-fluid">
+                                </div>
+                                <div class="col-9">
+                                    <h5>Title</h5>
+                                    <p class="text-primary"><i class="fas fa-map-marker-alt"></i><span>&nbsp;Gran Canaria joined to Peer2travel in 27 October</span></p>
+                                    <a href="#">View Public Profile</a>
+                                    <p></p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <span>Reputation: </span><span class="text-norm">no verificated</span><br>
+                                            <span>Total Ratings: </span><span class="text-norm">no reviews</span>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span class="text-norm">Check in: </span><span>31 October 2018</span><br>
+                                            <span class="text-norm">Check out: </span><span>02 November 2018</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <hr>
+                                    <button class="btn btn-outline-primary">Ourdoors Events</button>&nbsp;
+                                    <button class="btn btn-outline-primary">Ourdoors Events</button>&nbsp;
+                                    <button class="btn btn-outline-primary">Ourdoors Events</button>&nbsp;
+                                    <button class="btn btn-outline-primary">Ourdoors Events</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <br>
                     <div class="card">
                         <div class="card-body">
-                            asdf
+                            <h4>Description</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aliquam animi architecto commodi consectetur dolores ea harum itaque, laudantium minus obcaecati placeat quam sed similique sit soluta temporibus velit.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Amenities</h4>
+                                <div class="row">
+                                    <div class="col-md-4">
+
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

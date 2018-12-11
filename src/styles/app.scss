@@ -1,5 +1,6 @@
 @import "variable";
 @import "~bootstrap/scss/bootstrap.scss";
+//@import "icons/_flaticon.scss";
 @import "headers.scss";
 @import "footer.scss";
 
@@ -10,7 +11,7 @@ p {
     color: $text-color-black;
   }
 }
-
+.text-norm{color: $text-color-normal;}
 .centering{
   background: $brand-secondary;
   color: white;
