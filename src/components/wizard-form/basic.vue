@@ -7,19 +7,19 @@
                         <div class="col-md-12">
                             <h5>Accommodation Space</h5>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>Rooms</label>
                                 <input  name="rooms" type="number" class="form-control">
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>Shared Bathrooms</label>
                                 <input type="number"  name="shared_bathrooms" class="form-control">
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>Accommodates</label>
                                 <input type="number"  name="accommodate" class="form-control">
@@ -30,7 +30,7 @@
                         <div class="col-md-12">
                             <h5>Listing</h5>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>Property Type</label>
                                 <select name="property_type" class="form-control">
@@ -39,7 +39,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>Country</label>
                                 <select name="country" class="form-control">
@@ -48,7 +48,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label>City</label>
                                 <select name="city" class="form-control">
@@ -60,7 +60,7 @@
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
-                            <button class="btn btn btn-primary" type="submit">Save & Next</button>
+                            <button class="btn btn btn-primary" type="submit" @click.prevent="$parent.goStep(2)">Save & Next</button>
                         </div>
                     </div>
 

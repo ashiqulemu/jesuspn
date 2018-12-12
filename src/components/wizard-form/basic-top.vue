@@ -3,45 +3,45 @@
         <div class="row justify-content-center basic-content-top">
             <ul>
                 <li>
-                    <span class="rounded-icon active">1</span>
+                    <span :class="{'rounded-icon':true,'is-active':oneIsActive }">1</span>
                     <p>Basic</p>
                 </li>
                 <li>
-                    <span  class="rounded-icon">2</span>
+                    <span  :class="{'rounded-icon':true,'is-active':twoIsActive }">2</span>
                     <p>Room Details</p>
                 </li>
                 <li>
-                    <span  class="rounded-icon">3</span>
+                    <span  :class="{'rounded-icon':true,'is-active':threeIsActive }">3</span>
                     <p>Description</p>
 
                 </li>
                 <li>
-                    <span  class="rounded-icon">4</span>
+                    <span  :class="{'rounded-icon':true,'is-active':fourIsActive }">4</span>
                     <p>Location</p>
 
                 </li>
                 <li>
-                    <span  class="rounded-icon">5</span>
+                    <span  :class="{'rounded-icon':true,'is-active':fiveIsActive }">5</span>
                     <p>Amenities</p>
 
                 </li>
                 <li>
-                    <span  class="rounded-icon">6</span>
+                    <span  :class="{'rounded-icon':true,'is-active':sixIsActive }">6</span>
                     <p>Photos</p>
 
                 </li>
                 <li>
-                    <span  class="rounded-icon">7</span>
+                    <span  :class="{'rounded-icon':true,'is-active':sevenIisActive }">7</span>
                     <p>Pricing</p>
 
                 </li>
                 <li>
-                    <span  class="rounded-icon">8</span>
+                    <span  :class="{'rounded-icon':true,'is-active':eightIsActive }">8</span>
                     <p>Calendar</p>
 
                 </li>
                 <li>
-                    <span  class="rounded-icon">9</span>
+                    <span  :class="{'rounded-icon':true,'is-active':nineIsActive }">9</span>
                     <p>Terms</p>
                 </li>
             </ul>
@@ -55,8 +55,16 @@
     export default{
         data(){
             return{
-            
-            
+                oneIsActive:false,
+                twoIsActive:false,
+                threeIsActive:false,
+                fourIsActive:false,
+                fiveIsActive:false,
+                sixIsActive:false,
+                sevenIisActive:false,
+                eightIsActive:false,
+                nineIsActive:false,
+
             }
         
         }
@@ -95,7 +103,7 @@
             width: 25px;
             background: #fff;
             color:#000;
-            &.active{
+            &.is-active{
                 background: #fe575f!important;
                 color: #fff;
             }
