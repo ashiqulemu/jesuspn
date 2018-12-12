@@ -199,7 +199,9 @@
                             <br><br><br>
                             <div class="review-input">
                                 <textarea name="chat" cols="30" rows="3" class="form-control"></textarea>
-                                <button class="btn btn-circle btn-primary float-right">Submited</button>
+                                <button class="btn btn-circle btn-primary float-right">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
