@@ -25,6 +25,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4><i class="fas fa-map-marker-alt text-primary"></i> Fuerteventura Spain</h4>
+                            <br>
                             <p class="text-black-50  strong">Date Trip-Sharing: 31 Oct 2018 - 02 Nov 2018</p>
                             <p>asdfasdfasdf</p>
                         </div>
@@ -33,6 +34,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Master Details</h4>
+                            <br>
                             <div class="row">
                                 <div class="col-3">
                                     <img src="https://via.placeholder.com/150" class="img-fluid">
@@ -47,6 +49,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Interests</h4>
+                            <br>
                             <div class="row">
                                 <div class="col-12">
                                     <button class="btn btn-outline-primary">Ourdoors Events</button>&nbsp;
@@ -61,6 +64,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Perticipants</h4>
+                            <br>
                             <div class="row">
                                 <div class="col-3">
                                     <img src="https://via.placeholder.com/150" class="img-fluid">
@@ -96,6 +100,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Description</h4>
+                            <br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aliquam animi architecto commodi consectetur dolores ea harum itaque, laudantium minus obcaecati placeat quam sed similique sit soluta temporibus velit.</p>
                         </div>
                     </div>
@@ -104,13 +109,97 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4>Amenities</h4>
+                                <br>
                                 <div class="row">
                                     <div class="col-md-4">
-
+                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
                                     </div>
-                                    <div class="col-md-4"></div>
-                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4">
+                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Cancellation Policy</h4>
+                            <br>
+                            <h6>Strict</h6>
+                            <p>If the guest cancels, the reservation will not be refundable</p>
+                            <h6>Payback</h6>
+                            <p>You can get the money back prior 0 days of arrival if you cancel</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Host & Location</h4>
+                            <br>
+                            <h1>Map</h1>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Rate us and Write Review</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    upload image
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Your Rating for this listing</p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <hr>
+
+                           <div class="form-group">
+                               <label>Email *</label>
+                               <input type="email" class="form-control" placeholder="your@email.com">
+                           </div>
+
+                            <div class="form-group">
+                               <label>Title</label>
+                               <input type="text" class="form-control" placeholder="Summarize the service or highlight an interesting detail">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Review</label>
+                                <textarea name="review" id="" cols="30" rows="6" class="form-control"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label></label>
+                                <button class="btn btn-primary">SUBMIT REVIEW</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Chat With Us</h4>
+                            <br>
+                            <p class="chat-text d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <br><br><br>
+                            <div class="review-input">
+                                <textarea name="chat" cols="30" rows="3" class="form-control"></textarea>
+                                <button class="btn btn-circle btn-primary float-right">Submited</button>
                             </div>
                         </div>
                     </div>
