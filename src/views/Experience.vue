@@ -146,10 +146,12 @@
                         <div class="card-body">
                             <h4>Host & Location</h4>
                             <br>
+                            <div id="map">&nbsp;</div>
+
                             <div class="blocation">
                                 <h3>Location <a href="#" title="">Get Direction</a></h3>
                                 <div class="contact-map">
-                                    <div id="map_div">&nbsp;</div>
+
                                 </div>
                                 <span>Collins Street West, Victoria 8007, Australia.</span>
                                 <span>+1 246-345-0695</span>
@@ -275,7 +277,7 @@
                                     <a href="#" >You won't be charged yet</a>
                                 </div>
                             </div>
-
+                            <!--<div id="map">&nbsp;</div>-->
                         </div>
                     </div>
                 </div>
@@ -290,41 +292,215 @@
     export default {
         name: "experience",
         components:{Datepicker},
+        data(){
+            return{
+                name:"Niklesh Raut",
+                map:"",
+                mapOptions:{}
+            }
+        },
         mounted(){
 
-                alert("trert");
 
-                //------- Google Maps ---------//
+            var latlng = new google.maps.LatLng(53.385846,-1.471385);
+            var options = {
+                zoom: 15,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles:
+                    [
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#46EAEC"
+                                },
+                                {
+                                    "lightness": 17
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f5f5f5"
+                                },
+                                {
+                                    "lightness": 20
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 17
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 29
+                                },
+                                {
+                                    "weight": 0.2
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 18
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 16
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f5f5f5"
+                                },
+                                {
+                                    "lightness": 21
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#dedede"
+                                },
+                                {
+                                    "lightness": 21
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "visibility": "on"
+                                },
+                                {
+                                    "color": "#ffffff"
+                                },
+                                {
+                                    "lightness": 16
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "saturation": 36
+                                },
+                                {
+                                    "color": "#333333"
+                                },
+                                {
+                                    "lightness": 40
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f2f2f2"
+                                },
+                                {
+                                    "lightness": 19
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#fefefe"
+                                },
+                                {
+                                    "lightness": 20
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#fefefe"
+                                },
+                                {
+                                    "lightness": 17
+                                },
+                                {
+                                    "weight": 1.2
+                                }
+                            ]
+                        }
+                    ],
+            };
+            var map = new google.maps.Map(document.getElementById('map'), options);
 
-                // Creating a LatLng object containing the coordinate for the center of the map
-                var latlng = new google.maps.LatLng(53.385846,-1.471385);
+            var image = new google.maps.MarkerImage(require('../../static/pincontact.png'),
+                new google.maps.Size(100, 100),
+                new google.maps.Point(0,0),
+                new google.maps.Point(18, 42)
+            );
 
-                // Creating an object literal containing the properties we want to pass to the map
-                var options = {
-                    zoom: 15, // This number can be set to define the initial zoom level of the map
-                    center: latlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP // This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN
-                };
-                // Calling the constructor, thereby initializing the map
-                var map = new google.maps.Map(document.getElementById('map_div'), options);
-
-                // Define Marker properties
-                var image = new google.maps.MarkerImage('images/pincontact.png',
-                    new google.maps.Size(100, 100),
-                    new google.maps.Point(0,0),
-                    new google.maps.Point(18, 42)
-                );
-
-                // Add Marker
-                var marker1 = new google.maps.Marker({
-                    position: new google.maps.LatLng(53.385846,-1.471385),
-                    map: map,
-                    icon: image // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
-                });
+            var marker1 = new google.maps.Marker({
+                position: new google.maps.LatLng(53.385846,-1.471385),
+                map: map,
+                icon: image // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
+            });
+        },
 
 
-
-        }
     }
 </script>
 
@@ -335,4 +511,8 @@
 .active{
     color: #fe575f;
 }
+    #map {
+        height:500px;
+        width: 100%;
+    }
 </style>
