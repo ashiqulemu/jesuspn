@@ -31,7 +31,7 @@
 
                 </li>
                 <li>
-                    <span  :class="{'rounded-icon':true,'is-active':sevenIisActive }">7</span>
+                    <span  :class="{'rounded-icon':true,'is-active':sevenIsActive }">7</span>
                     <p>Pricing</p>
 
                 </li>
@@ -61,7 +61,7 @@
                 fourIsActive:false,
                 fiveIsActive:false,
                 sixIsActive:false,
-                sevenIisActive:false,
+                sevenIsActive:false,
                 eightIsActive:false,
                 nineIsActive:false,
 
