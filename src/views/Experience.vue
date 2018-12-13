@@ -291,9 +291,7 @@
         name: "experience",
         components:{Datepicker},
         mounted(){
-
-                alert("trert");
-
+            $(document).on('ready', ()=>{
                 //------- Google Maps ---------//
 
                 // Creating a LatLng object containing the coordinate for the center of the map
@@ -321,9 +319,7 @@
                     map: map,
                     icon: image // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
                 });
-
-
-
+            })
         }
     }
 </script>
