@@ -1,5 +1,5 @@
 <template>
-    <div class="basic">
+    <div class="basic" id="abc">
         <sub-header :title="title" :sub-title="subTitle"></sub-header>
         <div class="container">
             <basic-top ref="basicTop"></basic-top>
@@ -60,7 +60,12 @@
             }
 
         },
+        created(){
+            var abc=$('#abc');
+            console.log(abc)
+        },
         mounted(){
+
           this.goStep(1)
         },
         methods:{
