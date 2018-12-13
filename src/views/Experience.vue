@@ -324,6 +324,71 @@
         },
         mounted(){
 
+            $('#resgallery').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                slide: 'li',
+                fade: false,
+                asNavFor: '#resthumb'
+            });
+            $('#resthumb').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: '#resgallery',
+                dots: false,
+                arrows: false,
+                slide: 'li',
+                autoplay: true,
+                focusOnSelect: false,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            centerMode: true,
+                            centerPadding: '60px',
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 980,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            centerMode: true,
+                            centerPadding: '50px',
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            centerMode: true,
+                            centerPadding: '70px',
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            centerMode: true,
+                            centerPadding: '0px',
+                            dots: false
+                        }
+                    }
+                ]
+            });
+
 
             var latlng = new google.maps.LatLng(53.385846,-1.471385);
             var options = {
@@ -520,73 +585,6 @@
                 position: new google.maps.LatLng(53.385846,-1.471385),
                 map: map,
                 icon: image // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
-            });
-        },
-
-
-            $('#resgallery').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: true,
-                slide: 'li',
-                fade: false,
-                asNavFor: '#resthumb'
-            });
-            $('#resthumb').slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                asNavFor: '#resgallery',
-                dots: false,
-                arrows: false,
-                slide: 'li',
-                autoplay: true,
-                focusOnSelect: false,
-                responsive: [
-                    {
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            centerMode: true,
-                            centerPadding: '60px',
-                            dots: false
-                        }
-                    },
-                    {
-                        breakpoint: 980,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            centerMode: true,
-                            centerPadding: '50px',
-                            dots: false
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            centerMode: true,
-                            centerPadding: '70px',
-                            dots: false
-                        }
-                    },
-                    {
-                        breakpoint: 520,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            centerMode: true,
-                            centerPadding: '0px',
-                            dots: false
-                        }
-                    }
-                ]
             });
         }
     }
