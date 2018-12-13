@@ -325,7 +325,10 @@
                 var options = {
                     zoom: 15, // This number can be set to define the initial zoom level of the map
                     center: latlng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP // This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN
+                    mapTypeId: google.maps.MapTypeId.ROADMAP, // This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN
+                    styles:[
+
+                    ]
                 };
                 // Calling the constructor, thereby initializing the map
                 var map = new google.maps.Map(document.getElementById('map_div'), options);
