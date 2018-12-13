@@ -2,16 +2,18 @@
     <div class="home-part3">
         <h1 class="text-center">Get a Free Trip to Gran Canaria</h1>
         <p class="text-center">Participate in our contest.</p>
-        <h1 class="text-center">
-            slider area
-        </h1>
+        <h1 class="text-center"> slider area</h1>
     </div>
 </template>
 
 <script>
     export default {
-        name: "home-part3"
+        name: "home-part3",
+        mounted(){
+
+        }
     }
+
 </script>
 
 <style scoped lang="scss">
