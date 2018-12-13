@@ -1,45 +1,11 @@
 <template>
     <div>
-        <div class="row room-form">
+        <div class="row amenities-form">
             <div class="col-md-8">
                 <form class="form-horizontal">
-                    <div class="row room-one">
+                    <div class="row amenities-content">
                         <div class="col-md-12">
-                            <h5>Room 1</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Room Type</label>
-                                <select name="room_type" class="form-control">
-                                    <option value="">Select</option>
-                                    <option value="room">Room</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Bed Type</label>
-                                <select name="bed_type" class="form-control">
-                                    <option value="">Select</option>
-                                    <option value="bed">Bed</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Private Bathroom</label>
-                                <select name="private_bathroom" class="form-control">
-                                    <option value="">Select</option>
-                                    <option value="bathroom">Bathroom</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <hr>
-                            <h5>Room Amenities <span class="text-primary">0</span></h5>
+                            <h5>Common Amenities <span class="text-primary">0</span></h5>
                             <div class="amenities">
                                 <div class="amenities-box is-active">
                                     <div></div>
@@ -70,9 +36,9 @@
                     </div>
 
                     <div class="col-md-12 form-btn">
-                       <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(1)">Previous</button>
-                       <button class="btn btn btn-primary" type="submit" @click.prevent="">Save</button>
-                       <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(3)">Next</button>
+                        <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(4)">Previous</button>
+                        <button class="btn btn btn-primary" type="submit" @click.prevent="">Save</button>
+                        <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(6)">Next</button>
                     </div>
 
                 </form>
@@ -112,32 +78,27 @@
         },
         created(){
             this.$parent.title='Please give us more details about rooms',
-            this.$parent.subTitle='Describe your rooms details to help travelers choice'
+                this.$parent.subTitle='Describe your rooms details to help travelers choice'
 
         }
     }
 </script>
 <style lang="scss" scoped>
 
-    .room-form{
+    .amenities-form{
         .form-group{
             .btn.btn-primary{
                 margin-left: -31px;
                 margin-bottom: 50px;
             }
         }
+
     }
-    .room-one{
+    .amenities-content{
         border: 1px solid #e9e9e9;
         padding: 20px;
         margin-top: 40px;
         margin-bottom: 20px;
-    }
-    .listing{
-        border: 1px solid #e9e9e9;
-        padding: 20px;
-        margin-bottom: 20px;
-
     }
     .basic-side{
         margin-top:40px;

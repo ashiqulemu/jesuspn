@@ -1,5 +1,6 @@
 <template>
     <div>
+
         <div class="row basic-form">
             <div class="col-md-8">
                 <form class="form-horizontal" @submit.prevent="post()">
@@ -97,6 +98,11 @@
 
 
             }
+
+        },
+        created(){
+            this.$parent.title='Help travelers find the right home',
+            this.$parent.subTitle='Peer2travel lets you make money renting out your place.'
 
         }
     }

@@ -1,71 +1,68 @@
 <template>
     <div>
-        <div class="row description-form">
+        <div class="row location-form">
             <div class="col-md-8">
                 <form class="form-horizontal">
-                    <div class="row description">
+                    <div class="row location">
                         <div class="col-md-12">
-                            <h5>Description</h5>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label>Listing Name</label>
-                                <input  name="rooms" type="text" class="form-control" placeholder="Be clear and descriptive">
-                            </div>
+                            <h5>Location</h5>
+                            <img src="../../../src/assets/images/location.jpg"/>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label>About Your Home</label>
-                                <textarea  name="rooms" type="text"
-                                           rows="5"
-                                           class="form-control"
-                                           placeholder="Put information about what makes your place uique...">
-
-                                </textarea>
+                                <label>Search Address</label>
+                                <input  name="address" type="text" class="form-control" placeholder="Type to search">
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
-                                <label>Check In Form</label>
-                                <datepicker :input-class="'form-control'" ></datepicker>
+                                <label>Floor</label>
+                                <input  name="floor" type="text" class="form-control" placeholder="0">
                             </div>
                         </div>
-
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <div class="form-group">
-                                <label>Check In To</label>
-                                <datepicker :input-class="'form-control'" ></datepicker>
+                                <label>Block</label>
+                                <input  name="blocm" type="text" class="form-control" placeholder="0">
                             </div>
                         </div>
-
-                        <div class="col-md-4">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label>Check Out To</label>
-                                <datepicker :input-class="'form-control'" ></datepicker>
+                                <label>House / Property Number and Name</label>
+                                <input  name="house_property" type="text" class="form-control" placeholder="Type to search">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Nearby</label>
+                                <input  name="near_by" type="text" class="form-control" placeholder="Type to search">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Nearby</label>
+                                <input  name="near_by_another" type="text" class="form-control" placeholder="Gran Canaria" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Country</label>
+                                <input  name="country" type="text" class="form-control" placeholder="Spain" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Pincode</label>
+                                <input  name="pin_code" type="text" class="form-control" placeholder="0">
                             </div>
                         </div>
                     </div>
 
-                    <div class="row your-service">
-                        <div class="col-md-12">
-                            <h5>Your Service</h5>
-                            <p>What service Do You Offer?</p>
-                            <textarea class="form-control"
-                                      rows="3"
-                                      placeholder="E.g:cleaning, wifi,transportation,laundry or other services that you can offer to travelers...">
-
-                            </textarea>
-                            <p>You can add more <a href="#">details</a> to tell travelers about your services space and hosting</p>
-                        </div>
-
-
-
-                    </div>
 
                     <div class="col-md-12 form-btn">
-                        <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(2)">Previous</button>
+                        <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(3)">Previous</button>
                         <button class="btn btn btn-primary" type="submit" @click.prevent="">Save</button>
-                        <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(4)">Next</button>
+                        <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(5)">Next</button>
                     </div>
 
                 </form>
@@ -104,14 +101,14 @@
         },
         created(){
             this.$parent.title='Tell travelers why your accommodation is unique',
-            this.$parent.subTitle='Describe how your accommodation is properly for social trips.'
+                this.$parent.subTitle='Describe how your accommodation is properly for social trips.'
 
         }
     }
 </script>
 <style lang="scss" scoped>
 
-    .description-form{
+    .location-form{
         .form-group{
             .btn.btn-primary{
                 margin-left: -31px;
@@ -120,23 +117,13 @@
         }
 
     }
-    .description{
+    .location{
         border: 1px solid #e9e9e9;
         padding: 20px;
         margin-top: 40px;
         margin-bottom: 20px;
     }
-
-    .your-service{
-        border: 1px solid #e9e9e9;
-        padding: 20px;
-        margin-bottom: 20px;
-        a{
-            color: #fe575f;
-            text-decoration: underline;
-        }
-
-    }
+    
 
     .basic-side{
         margin-top:40px;
