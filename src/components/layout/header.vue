@@ -52,11 +52,15 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Pages</a>
                             </li>
+                            <li class="nav-item">
+                                <button class="add-listing">  + Add Listing </button>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fa fa-user text-white nav"></i>
+                                </a>
+                            </li>
                         </ul>
-                        <button class="add-listing">  + Add Listing </button>
-                        <a href="">
-                            <i class="fa fa-user text-white nav"></i>
-                        </a>
                     </div>
                 </nav>
             </div>
