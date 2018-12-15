@@ -11,10 +11,11 @@
                                 <div class="row">
 
                                     <h3 class="text-own-center col-md-12">What you will win?</h3>
-
+                                        <i class="flaticon-wifi"></i>
                                     <div class="circle-div">
                                         <div class="circle-child-div"></div>
                                         <h5>Social</h5>
+                                        <i class="flaticon-back"></i>
                                     </div>
                                     <div class="circle-div">
                                         <div class="circle-child-div"></div>
