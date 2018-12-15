@@ -7,6 +7,7 @@ import HelpSupport from './views/help-support.vue'
 import TermsCondition from './views/terms-condition.vue'
 import Experience from './views/Experience.vue'
 import Basic from './views/main-step.vue'
+import TripShare from './views/add-tripshare.vue'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
           path: '/main-form',
           name: 'basic',
           component: Basic
+      },
+      {
+          path: '/trip-share',
+          name: 'tripShare',
+          component: TripShare
       },
 
 ]
