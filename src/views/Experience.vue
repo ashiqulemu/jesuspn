@@ -49,8 +49,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Master Details</h4>
-                            <br>
-                            <div class="row">
+
+                            <div class="row mt-3">
                                 <div class="col-3">
                                     <img src="https://via.placeholder.com/150" class="img-fluid">
                                 </div>
@@ -83,8 +83,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Interests</h4>
-                            <br>
-                            <div class="row">
+
+                            <div class="row mt-3">
                                 <div class="col-12">
                                     <button class="btn btn-outline-primary">Ourdoors Events</button>&nbsp;
                                     <button class="btn btn-outline-primary">Ourdoors Events</button>&nbsp;
@@ -98,8 +98,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Perticipants</h4>
-                            <br>
-                            <div class="row">
+                            <div class="row mt-3">
                                 <div class="col-3">
                                     <img src="https://via.placeholder.com/150" class="img-fluid">
                                 </div>
@@ -134,8 +133,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Description</h4>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aliquam animi architecto commodi consectetur dolores ea harum itaque, laudantium minus obcaecati placeat quam sed similique sit soluta temporibus velit.</p>
+
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aliquam animi architecto commodi consectetur dolores ea harum itaque, laudantium minus obcaecati placeat quam sed similique sit soluta temporibus velit.</p>
                         </div>
                     </div>
                     <br>
@@ -143,8 +142,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4>Amenities</h4>
-                                <br>
-                                <div class="row">
+
+                                <div class="row mt-3">
                                     <div class="col-md-4">
                                         <i class="flaticon-credit-card"></i>
                                         <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
@@ -169,11 +168,15 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Cancellation Policy</h4>
+                            <div class="row mt-3">
+                                <div class="col-md-12">
 
-                            <h6>Strict</h6>
-                            <p>If the guest cancels, the reservation will not be refundable</p>
-                            <h6>Payback</h6>
-                            <p>You can get the money back prior 0 days of arrival if you cancel</p>
+                                    <h6>Strict</h6>
+                                    <p>If the guest cancels, the reservation will not be refundable</p>
+                                    <h6>Payback</h6>
+                                    <p>You can get the money back prior 0 days of arrival if you cancel</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <br>
@@ -187,7 +190,7 @@
                                     <a href="#" class="float-right">Get Direction</a>
                                 </div>
                             </div>
-                            <br>
+                            <div class="row mt-3"></div>
                             <div id="map">&nbsp;</div>
 
                             <div class="blocation">
@@ -224,7 +227,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Rate us and Write Review</h4>
-                            <div class="row">
+                            <div class="row mt-3">
                                 <div class="col-md-6">
                                     upload image
                                 </div>
@@ -311,7 +314,7 @@
                             </div>
 
                             <div class="list-group-flush">
-                                <div class="list-group-item">
+                                <div class="list-group-item" style="border-top: none;">
                                     <div>
                                         <span>Room 1 Small 100€*2 nights</span>
                                         <span class="float-right">200€</span>
@@ -321,16 +324,18 @@
                                     <span>Discount(0%)</span>
                                     <span class="float-right">0.00€</span>
                                 </div>
-                                <div class="list-group-item">
+                                <div class="list-group-item" style="border-bottom: none;">
                                     <span>Total</span>
                                     <span class=" float-right text-primary">200€</span>
                                 </div>
                                 <div class="form-group text-center">
-                                    <br>
-                                    <button class="btn btn btn-primary">BOOK NOW!</button>
+
+                                       <button class="btn btn btn-primary btn-block">BOOK NOW!</button>
+
+
                                 </div>
                                 <div class="from-group text-center">
-                                    <a href="#" >You won't be charged yet</a>
+                                    <a href="#" class="text-norm small">You won't be charged yet</a>
                                 </div>
                             </div>
                             <!--<div id="map">&nbsp;</div>-->

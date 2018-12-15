@@ -8,7 +8,9 @@
 
 @import "headers.scss";
 @import "footer.scss";
-
+label{
+  font-size: 14px;
+}
 p {
   color: $text-color-normal;
   margin-bottom: .7rem;

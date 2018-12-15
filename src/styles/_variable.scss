@@ -17,3 +17,6 @@ $slick-arrow-color: $primary;
 input,select.form-control{
   height: calc(2.65rem + 2px) !important;
 }
+.form-control{
+  color: $text-color-normal !important;
+}
