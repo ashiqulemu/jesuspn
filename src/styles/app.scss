@@ -1,8 +1,11 @@
 @import "variable";
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~slick-carousel/slick/slick.scss";
-//@import "~slick-carousel/slick/slick-theme.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 //@import "icons/_flaticon.scss";
+
+
+
 @import "headers.scss";
 @import "footer.scss";
 
@@ -72,4 +75,11 @@ p {
 .view-more{
   margin: 20px 15px;
   color: $primary;
+}
+
+.link-hover-primary{
+  color: $text-color-normal;
+  &:hover{
+    color: $primary;
+  }
 }

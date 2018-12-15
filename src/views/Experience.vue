@@ -7,8 +7,23 @@
                         <div class="card-header">
                             Gallery
                         </div>
-                        <div class="card-body">
-                            gallery
+                        <div class="gallary-preview">
+                            <ul id="resgallery">
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                            </ul>
+                            <ul id="resthumb">
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                            </ul>
                         </div>
                     </div>
                     <br>
@@ -112,6 +127,7 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-4">
+                                        <i class="flaticon-credit-card"></i>
                                         <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
                                         <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
                                         <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
@@ -157,12 +173,12 @@
                                 <span>+1 246-345-0695</span>
                                 <span>info@example.com</span>
                                 <div class="wsocial">
-                                    <a href="#" title=""><i class="fa fa-facebook"></i></a>
-                                    <a href="#" title=""><i class="fa fa-twitter"></i></a>
-                                    <a href="#" title=""><i class="fa fa-linkedin"></i></a>
-                                    <a href="#" title=""><i class="fa fa-pinterest"></i></a>
-                                    <a href="#" title=""><i class="fa fa-google"></i></a>
-                                    <a href="#" title=""><i class="fa fa-dribbble"></i></a>
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-facebook"></i></a> &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-twitter"></i></a> &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-linkedin"></i></a> &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-pinterest"></i></a> &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-google"></i></a> &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-dribbble"></i></a> &nbsp;&nbsp;
                                 </div>
                             </div>
                         </div>
@@ -300,8 +316,6 @@
             }
         },
         mounted(){
-
-
             var latlng = new google.maps.LatLng(53.385846,-1.471385);
             var options = {
                 zoom: 15,
@@ -498,13 +512,79 @@
                 map: map,
                 icon: image // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
             });
-        },
 
-
+            $('#resgallery').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                slide: 'li',
+                fade: false,
+                asNavFor: '#resthumb'
+            });
+            $('#resthumb').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: '#resgallery',
+                dots: false,
+                arrows: false,
+                slide: 'li',
+                autoplay: true,
+                focusOnSelect: false,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            centerMode: true,
+                            centerPadding: '60px',
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 980,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            centerMode: true,
+                            centerPadding: '50px',
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            centerMode: true,
+                            centerPadding: '70px',
+                            dots: false
+                        }
+                    },
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            centerMode: true,
+                            centerPadding: '0px',
+                            dots: false
+                        }
+                    }
+                ]
+            });
+        }
     }
 </script>
 
 <style lang="scss" scoped>
+    .bbox{
+
+    }
     .experience{
         padding: 51px 0;
     }
