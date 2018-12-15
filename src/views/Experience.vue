@@ -139,26 +139,25 @@
                     </div>
                     <br>
                     <div>
-                        <div class="card">
+                        <div class="card amenities">
                             <div class="card-body">
                                 <h4>Amenities</h4>
 
-                                <div class="row mt-3">
+                                <div class="row mt-3 iconset">
                                     <div class="col-md-4">
-                                        <i class="flaticon-credit-card"></i>
-                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
-                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
-                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                        <p><i class="flaticon-credit-card text-primary"></i>&nbsp;&nbsp;<span class="small">Accepts Credit Cards</span></p>
+                                        <p><i class="flaticon-smoking text-primary"></i>&nbsp;&nbsp;<span class="small">Smoking Allowed</span></p>
+                                        <p><i class="flaticon-booked text-primary"></i>&nbsp;&nbsp;<span class="small">Reservations</span></p>
                                     </div>
                                     <div class="col-md-4">
-                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
-                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
-                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                        <p><i class="flaticon-wifi text-primary"></i>&nbsp;&nbsp;<span class="small">Wireless Internet</span></p>
+                                        <p><i class="flaticon-bicycle text-primary"></i>&nbsp;&nbsp;<span class="small">Bike Parking</span></p>
+                                        <p><i class="flaticon-coupon text-primary"></i>&nbsp;&nbsp;<span class="small">Coupons</span></p>
                                     </div>
                                     <div class="col-md-4">
-                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
-                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
-                                        <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
+                                        <p><i class="flaticon-parking text-primary"></i>&nbsp;&nbsp;<span class="small">Parking Street</span></p>
+                                        <p><i class="flaticon-handicapped text-primary"></i>&nbsp;&nbsp;<span class="small">Wheelchair Accessible</span></p>
+                                        <p><i class="flaticon-map text-primary"></i>&nbsp;&nbsp;<span class="small">Outdoor Seating</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -197,9 +196,9 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <br>
-                                        <p>Collins Street West, Victoria 8007, Australia.</p>
-                                        <p>+1 246-345-0695</p>
-                                        <p>info@example.com</p>
+                                        <p class="small">Collins Street West, Victoria 8007, Australia.</p>
+                                        <p class="small">+1 246-345-0695</p>
+                                        <p class="small">info@example.com</p>
                                     </div>
                                     <div class="col-md-6">
                                         <br>
@@ -229,7 +228,8 @@
                             <h4>Rate us and Write Review</h4>
                             <div class="row mt-3">
                                 <div class="col-md-6">
-                                    upload image
+                                    <label>file upload</label>
+                                    <input type="file">
                                 </div>
                                 <div class="col-md-6">
                                     <div class="float-right">
@@ -625,6 +625,18 @@
 </script>
 
 <style lang="scss" scoped>
+    .amenities{
+        i{
+            font-size: 25px;
+        }
+        .iconset{
+            p{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+    }
     .gallery-preview{
         h4{
             margin-bottom: 20px;
@@ -636,6 +648,7 @@
     }
     .experience{
         padding: 51px 0;
+
     }
     .active{
         color: #fe575f;
