@@ -7,7 +7,7 @@
                         <div class="card-header">
                             Gallery
                         </div>
-                        <div class="gallary-preview">
+                        <div class="gallery-preview">
                             <ul id="resgallery">
                                 <li><img src="http://placehold.it/850x370" alt="" /></li>
                                 <li><img src="http://placehold.it/850x370" alt="" /></li>
@@ -582,15 +582,28 @@
 </script>
 
 <style lang="scss" scoped>
-    .bbox{
+    .gallery-preview{
+        ul#resgallery{
+            padding: 0;
+            button{
+                z-index: 99999 !important;
+            }
+            .slick-prev{
+                &:before{
+                    color: red;
+                }
+            }
+            .slick-next{
 
+            }
+        }
     }
     .experience{
         padding: 51px 0;
     }
-.active{
-    color: #fe575f;
-}
+    .active{
+        color: #fe575f;
+    }
     #map {
         height:500px;
         width: 100%;
