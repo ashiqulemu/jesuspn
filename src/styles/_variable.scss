@@ -1,16 +1,16 @@
 $primary: #fe575f;
 $brand-primary:$primary;
 $brand-secondary:#242422;
-$text-color-normal: #8e8e8e;
+$text-color-normal: #616161d1;
 $text-color-black: black;
 $input-border-radius: 0;
-
+$h4-font-size: 1.25rem;
 $border-radius-base: 0;
 $border-radius-large: 0;
 $border-radius-small: 0;
 
 $btn-primary-color: $primary;
-
+$slick-arrow-color: $primary;
 .btn{
   border-radius: 0!important;
 }

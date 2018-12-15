@@ -4,45 +4,45 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="card" >
-                        <div class="card-header">
-                            Gallery
-                        </div>
+
                         <div class="gallery-preview">
-                            <ul id="resgallery">
-                                <li><img src="http://placehold.it/850x370" alt="" /></li>
-                                <li><img src="http://placehold.it/850x370" alt="" /></li>
-                                <li><img src="http://placehold.it/850x370" alt="" /></li>
-                                <li><img src="http://placehold.it/850x370" alt="" /></li>
-                                <li><img src="http://placehold.it/850x370" alt="" /></li>
-                                <li><img src="http://placehold.it/850x370" alt="" /></li>
-                            </ul>
-                            <ul id="resthumb">
-                                <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                <li><img src="http://placehold.it/160x115" alt="" /></li>
-                            </ul>
+                            <h4>Gallery</h4>
+                            <div id="resgallery">
+                                <div><img src="http://placehold.it/850x370" alt="" /></div>
+                                <div><img src="http://placehold.it/850x370" alt="" /></div>
+                                <div><img src="http://placehold.it/850x370" alt="" /></div>
+                                <div><img src="http://placehold.it/850x370" alt="" /></div>
+                                <div><img src="http://placehold.it/850x370" alt="" /></div>
+                                <div><img src="http://placehold.it/850x370" alt="" /></div>
+                            </div>
+                            <br>
+                            <div id="resthumb">
+                                <div><img src="http://placehold.it/160x115" alt="" /></div>
+                                <div><img src="http://placehold.it/160x115" alt="" /></div>
+                                <div><img src="http://placehold.it/160x115" alt="" /></div>
+                                <div><img src="http://placehold.it/160x115" alt="" /></div>
+                                <div><img src="http://placehold.it/160x115" alt="" /></div>
+                                <div><img src="http://placehold.it/160x115" alt="" /></div>
+                            </div>
                         </div>
                     </div>
                     <br>
                     <div class="card-header" style="border-bottom: none">
                         <div class="row justify-content-around">
                             <span class="active">Description</span>
-                            <span>Amenities</span>
-                            <span>Cancellation Policy</span>
-                            <span>The Host & Location</span>
-                            <span>Review</span>
+                            <span class="text-norm">Amenities</span>
+                            <span class="text-norm">Cancellation Policy</span>
+                            <span class="text-norm">The Host & Location</span>
+                            <span class="text-norm">Review</span>
                         </div>
                     </div>
                     <br>
                     <div class="card">
                         <div class="card-body">
                             <h4><i class="fas fa-map-marker-alt text-primary"></i> Fuerteventura Spain</h4>
-                            <br>
-                            <p class="text-black-50  strong">Date Trip-Sharing: 31 Oct 2018 - 02 Nov 2018</p>
-                            <p>asdfasdfasdf</p>
+
+                            <p class="text-black-30 mt-3"><strong>Date Trip-Sharing: 31 Oct 2018 - 02 Nov 2018</strong></p>
+                            <p class="small">asdfasdfasdf</p>
                         </div>
                     </div>
                     <br>
@@ -55,7 +55,26 @@
                                     <img src="https://via.placeholder.com/150" class="img-fluid">
                                 </div>
                                 <div class="col-9">
-                                    test
+                                    <p><strong class="text-black-30">Admin Admin</strong></p>
+                                    <p>
+                                        <a href="#">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            Gran Canaria Joined to Peer2travel in 29 October 2018
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <span class="text-black-30">Reputation Score: </span>
+                                        <span>no verification</span>
+                                    </p>
+                                    <p>
+                                        <span class="text-black-30">Total Ratings: </span>
+                                        <span>no reviews</span>
+                                    </p>
+
+                                    <a href="#">
+                                        View Public Profile
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -150,7 +169,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4>Cancellation Policy</h4>
-                            <br>
+
                             <h6>Strict</h6>
                             <p>If the guest cancels, the reservation will not be refundable</p>
                             <h6>Payback</h6>
@@ -160,25 +179,43 @@
                     <br>
                     <div class="card">
                         <div class="card-body">
-                            <h4>Host & Location</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>Host & Location</h4>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="#" class="float-right">Get Direction</a>
+                                </div>
+                            </div>
                             <br>
                             <div id="map">&nbsp;</div>
 
                             <div class="blocation">
-                                <h3>Location <a href="#" title="">Get Direction</a></h3>
-                                <div class="contact-map">
-
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <br>
+                                        <p>Collins Street West, Victoria 8007, Australia.</p>
+                                        <p>+1 246-345-0695</p>
+                                        <p>info@example.com</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <br>
+                                        <button class="btn btn btn-primary float-right">CONTACT HOST</button>
+                                    </div>
                                 </div>
-                                <span>Collins Street West, Victoria 8007, Australia.</span>
-                                <span>+1 246-345-0695</span>
-                                <span>info@example.com</span>
                                 <div class="wsocial">
-                                    <a href="#" class="link-hover-primary"><i class="fab fa-facebook"></i></a> &nbsp;&nbsp;
-                                    <a href="#" class="link-hover-primary"><i class="fab fa-twitter"></i></a> &nbsp;&nbsp;
-                                    <a href="#" class="link-hover-primary"><i class="fab fa-linkedin"></i></a> &nbsp;&nbsp;
-                                    <a href="#" class="link-hover-primary"><i class="fab fa-pinterest"></i></a> &nbsp;&nbsp;
-                                    <a href="#" class="link-hover-primary"><i class="fab fa-google"></i></a> &nbsp;&nbsp;
-                                    <a href="#" class="link-hover-primary"><i class="fab fa-dribbble"></i></a> &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-facebook"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-twitter"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-linkedin"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-pinterest"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-google"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a href="#" class="link-hover-primary"><i class="fab fa-dribbble"></i></a>
+                                    &nbsp;&nbsp;
                                 </div>
                             </div>
                         </div>
@@ -192,12 +229,15 @@
                                     upload image
                                 </div>
                                 <div class="col-md-6">
-                                    <p>Your Rating for this listing</p>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                                    <div class="float-right">
+                                        <span class="text-norm">Your Rating for this listing</span><br><br>
+                                        <i class="fas fa-star star-green"></i>
+                                        <i class="fas fa-star star-green"></i>
+                                        <i class="fas fa-star star-green"></i>
+                                        <i class="fas fa-star star-green"></i>
+                                        <i class="fas fa-star-half-alt star-green"></i>
+                                        &nbsp; <button class="button btn btn-outline-primary">Very Good</button>
+                                    </div>
                                 </div>
                             </div>
                             <hr>
@@ -517,7 +557,6 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true,
-                slide: 'li',
                 fade: false,
                 asNavFor: '#resthumb'
             });
@@ -527,7 +566,6 @@
                 asNavFor: '#resgallery',
                 dots: false,
                 arrows: false,
-                slide: 'li',
                 autoplay: true,
                 focusOnSelect: false,
                 responsive: [
@@ -583,19 +621,12 @@
 
 <style lang="scss" scoped>
     .gallery-preview{
-        ul#resgallery{
-            padding: 0;
-            button{
-                z-index: 99999 !important;
-            }
-            .slick-prev{
-                &:before{
-                    color: red;
-                }
-            }
-            .slick-next{
-
-            }
+        h4{
+            margin-bottom: 20px;
+        }
+        padding:30px;
+        #resthumb{
+            /*padding-left: 20px;*/
         }
     }
     .experience{
@@ -605,7 +636,7 @@
         color: #fe575f;
     }
     #map {
-        height:500px;
+        height:270px;
         width: 100%;
     }
 </style>

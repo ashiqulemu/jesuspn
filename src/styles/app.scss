@@ -11,6 +11,7 @@
 
 p {
   color: $text-color-normal;
+  margin-bottom: .7rem;
   &.dark {
     color: $text-color-black;
   }
@@ -30,7 +31,7 @@ p {
     font-size: 28px;
   }
   p{
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 .text-own-center{
@@ -59,6 +60,9 @@ p {
   color: white;
   border-radius: 0 20px 20px 20px;
 }
+.star-green{
+  color:#b4c52c;
+}
 .review-input{
   display: flex;
   justify-content: flex-end;
@@ -82,4 +86,7 @@ p {
   &:hover{
     color: $primary;
   }
+}
+.text-black-30{
+  color: #494949;
 }
