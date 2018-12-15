@@ -7,31 +7,23 @@
                         <div class="card-header">
                             Gallery
                         </div>
-                        <div class="card-body">
-                            <div class="bbox">
-                                <h3>Gallery</h3>
-                                <div class="bbox">
-                                    <h3>Gallery</h3>
-                                    <ul id="resgallery">
-                                        <li><img src="http://placehold.it/688x370" alt="" /></li>
-                                        <li><img src="http://placehold.it/688x370" alt="" /></li>
-                                        <li><img src="http://placehold.it/688x370" alt="" /></li>
-                                        <li><img src="http://placehold.it/688x370" alt="" /></li>
-                                        <li><img src="http://placehold.it/688x370" alt="" /></li>
-                                        <li><img src="http://placehold.it/688x370" alt="" /></li>
-                                    </ul>
-                                    <ul id="resthumb">
-                                        <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                        <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                        <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                        <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                        <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                        <li><img src="http://placehold.it/160x115" alt="" /></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
+                        <div class="gallary-preview">
+                            <ul id="resgallery">
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                                <li><img src="http://placehold.it/850x370" alt="" /></li>
+                            </ul>
+                            <ul id="resthumb">
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                                <li><img src="http://placehold.it/160x115" alt="" /></li>
+                            </ul>
                         </div>
                     </div>
                     <br>
@@ -135,6 +127,7 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-4">
+                                        <i class="flaticon-credit-card"></i>
                                         <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
                                         <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
                                         <p><i class="fa fa-user text-primary"></i>&nbsp;&nbsp;<span>Accepts Credit Cards</span></p>
@@ -589,6 +582,9 @@
 </script>
 
 <style lang="scss" scoped>
+    .bbox{
+
+    }
     .experience{
         padding: 51px 0;
     }
