@@ -10,7 +10,7 @@ import Slick from 'vue-slick'
 Vue.config.productionTip = false
 Vue.component('sub-header', subHeader)
 Vue.component('slick', Slick)
-
+Vue.use(require('vue-moment'))
 new Vue({
   router,
   store,

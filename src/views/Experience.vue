@@ -272,11 +272,15 @@
                         <div class="card-body">
                             <h4>Chat With Us</h4>
                             <br>
-                            <p class="chat-text d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div class="row" v-for="chat in chats">
+                               <div class="col-md-12">
+                                   <p class="chat-text d-inline-block" >{{ chat }}</p>
+                               </div>
+                            </div>
                             <br><br><br>
                             <div class="review-input">
-                                <textarea name="chat" cols="30" rows="3" class="form-control"></textarea>
-                                <button class="btn btn-circle btn-primary float-right">
+                                <textarea name="chat" cols="30" rows="3" class="form-control" v-model="message"></textarea>
+                                <button class="btn btn-circle btn-primary float-right" @click="addChat()">
                                     <i class="fas fa-paper-plane"></i>
                                 </button>
                             </div>
@@ -291,33 +295,31 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label >Check In</label>
-                                <datepicker :input-class="'form-control'" ></datepicker>
+                                <datepicker :input-class="'form-control'" v-model="checkin"></datepicker>
                             </div>
                             <div class="form-group">
                                 <label >Check Out</label>
-                                <datepicker :input-class="'form-control'" ></datepicker>
+                                <datepicker :input-class="'form-control'" v-model="checkout"></datepicker>
                             </div>
                             <div class="form-group">
                                 <label for="room">Room</label>
-                                <select name="room" id="room" class="form-control">
+                                <select name="room" id="room" class="form-control" v-model="roomNumber">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="room">Type</label>
-                                <select name="type" id="type" class="form-control">
-                                    <option value="small">Small Room</option>
-                                    <option value="medium">Medium Room</option>
-                                    <option value="large">Large Room</option>
+                                <select name="type" id="type" class="form-control" v-model="roomType">
+                                    <option :value="type" v-for="(type, index) in roomTypes">{{Object.keys(type).join(',')}}</option>
                                 </select>
                             </div>
 
                             <div class="list-group-flush">
                                 <div class="list-group-item" style="border-top: none;">
                                     <div>
-                                        <span>Room 1 Small 100€*2 nights</span>
-                                        <span class="float-right">200€</span>
+                                        <span>Room 1 Small {{totalPrice}}€*{{totalDay}} nights</span>
+                                        <span class="float-right">{{roomNumberPriceDay}}</span>
                                     </div>
                                 </div>
                                 <div class="list-group-item">
@@ -357,15 +359,62 @@
             return{
                 name:"Niklesh Raut",
                 map:"",
-                mapOptions:{}
+                mapOptions:{},
+                message:'',
+                chats:[],
+                checkin:'',
+                checkout:'',
+                roomNumber:1,
+                roomType:{},
+                roomTypes:[
+                    {Small:100},
+                    {Medium:200},
+                    {Large:300},
+                ],
+                discount:0
             }
         },
+
+        computed:{
+            roomNumberPriceDay(){
+                if(this.totalDay && this.totalPrice){
+                    let price  = this.totalPrice
+                    return price * this.totalDay * this.roomNumber
+                }else{
+                    return 0
+                }
+            },
+            totalPrice(){
+                if(!_.isEmpty(this.roomType)){
+                    return Object.values(this.roomType).join(',')
+                }else{
+                    return 0
+                }
+            },
+            totalDay(){
+                let date1 = this.checkin
+                let date2 = this.checkout
+                if((date1 && date2) && (date2.getTime()> date1.getTime())){
+                    let timeDiff= Math.abs(date2.getTime() - date1.getTime())
+                    return Math.ceil(timeDiff / (1000 * 3600 * 24))
+                }else{
+                    return 0
+                }
+            }
+        },
+
         mounted(){
             this.googleMap()
             this.slickSlider()
 
         },
         methods:{
+
+            addChat(){
+               this.chats.push(this.message)
+                this.message = ''
+            },
+
             googleMap(){
                 var latlng = new google.maps.LatLng(53.385846,-1.471385);
                 var options = {
