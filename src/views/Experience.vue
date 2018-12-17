@@ -319,16 +319,16 @@
                                 <div class="list-group-item" style="border-top: none;">
                                     <div>
                                         <span>Room 1 Small {{totalPrice}}€*{{totalDay}} nights</span>
-                                        <span class="float-right">{{roomNumberPriceDay}}</span>
+                                        <span class="float-right">{{roomNumberPriceDay}}€</span>
                                     </div>
                                 </div>
                                 <div class="list-group-item">
                                     <span>Discount(0%)</span>
-                                    <span class="float-right">0.00€</span>
+                                    <span class="float-right">{{roomNumberPriceDay*discount/100}}€</span>
                                 </div>
                                 <div class="list-group-item" style="border-bottom: none;">
                                     <span>Total</span>
-                                    <span class=" float-right text-primary">200€</span>
+                                    <span class=" float-right text-primary">{{ roomNumberPriceDay - (roomNumberPriceDay * discount)/100}}€</span>
                                 </div>
                                 <div class="form-group text-center">
 
