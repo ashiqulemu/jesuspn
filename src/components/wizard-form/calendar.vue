@@ -11,7 +11,7 @@
 
                     </div>
 
-                    <div class="col-md-12 form-btn">
+                    <div class="row form-button">
                         <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(7)">Previous</button>
                         <button class="btn btn btn-primary" type="submit" @click.prevent="">Save</button>
                         <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(9)">Next</button>

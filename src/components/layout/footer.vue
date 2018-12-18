@@ -3,7 +3,7 @@
         <div class="container footer-top">
             <div class="row">
                 <div class="col-md-4 col-sm-6">
-                    <img src="../../../src/assets/images/logo_color_black.png">
+                    <img class="footer-brand" src="../../../src/assets/images/logo_color_black.png">
                     <p class="footer-para">
                         We are an online marketplace platform for booking social group trips.
                         Our service is more affordable and convenient than hotel.
@@ -25,7 +25,7 @@
                             <a href="#">Copyright Policy</a>
                         </div>
                     </div>
-                    <div class="row" v-else>
+                    <div class="row hidden-footer" v-else>
                         <div class="col-md-12 text-center">
                             <p class="text-primary"><strong>DON'T MISS THIS CHANCE</strong></p>
                             <button class="btn btn-primary rounded">Start the trip now!</button>
@@ -58,12 +58,14 @@
 <script>
     export default {
         name: "footers",
-       
-        
-       
     }
 </script>
 
 <style lang="scss" scoped>
 
+    @media(max-width: 768px){
+        .hidden-footer{
+            padding: 50px 0;
+        }
+    }
 </style>

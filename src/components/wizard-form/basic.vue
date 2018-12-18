@@ -66,15 +66,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <button class="rounded pl-5 pr-5 btn btn btn-primary uppercase" type="submit" @click.prevent="$parent.goStep(2)">Save & Next</button>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+            
+                    <div class="row form-button">
+                        <button class=" btn btn btn-primary mb-2" type="submit" @click.prevent="$parent.goStep(2)">Save & Next</button>
                     </div>
-                </div>
+              
             
             </form>
         
