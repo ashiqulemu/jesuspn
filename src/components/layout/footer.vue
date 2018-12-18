@@ -2,7 +2,7 @@
     <div class="footer" name="footer">
         <div class="container footer-top">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <img src="../../../src/assets/images/logo_color_black.png">
                     <p class="footer-para">
                         We are an online marketplace platform for booking social group trips.
@@ -26,12 +26,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <p class="column-title  ">LANGUAGE</p>
-                    <select name="" id="" class=" d-block form-control">
-                        <option value="engine">English</option>
-                        <option value="spanish">Spanish</option>
-                    </select>
+                <div class="col-md-4 ">
+                    <div class="footerLastColumn">
+                        <p class="column-title">LANGUAGE</p>
+                        <select id="" class="float-right form-control">
+                            <option value="engine">English</option>
+                            <option value="spanish">Spanish</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>

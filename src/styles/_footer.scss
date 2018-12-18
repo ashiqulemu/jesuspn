@@ -38,7 +38,7 @@
   select{
     margin-top: 30px;
     height: 38px!important;
-    width: 55%;
+    width:70%;
   }
 
 }
@@ -58,4 +58,17 @@
     color: $brand-primary;
     font-weight: 600;
   }
+}
+.footerLastColumn{
+  @media (max-width: 767px){
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(20px);
+}
+   .column-title{
+     text-align: center;
+     transform: translateX(-28px);
+
+   }
 }
