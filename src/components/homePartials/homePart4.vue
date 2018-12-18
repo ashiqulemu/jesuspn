@@ -42,13 +42,17 @@
         text-align: center;
     }
     .btn-circle-primary{
+        margin: 0 auto;
         color: #fff;
-        min-width: 60px;
-        padding: 15px 15px;
-        font-size: 30px;
-        border-radius: 100%;
+        font-size: 24px;
         background: #FE575F;
         margin-bottom: 20px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
     }
 }
 </style>

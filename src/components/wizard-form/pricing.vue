@@ -102,7 +102,7 @@
                     </div>
                        <a href="#">You can offer discounts for longer stays by setting weekly and monthly prices.</a>
 
-                    <div class="col-md-12 form-btn">
+                    <div class="row form-button">
                         <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(6)">Previous</button>
                         <button class="btn btn btn-primary" type="submit" @click.prevent="">Save</button>
                         <button class="btn btn btn-default" type="submit" @click.prevent="$parent.goStep(8)">Next</button>

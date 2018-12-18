@@ -62,16 +62,13 @@
                                    <label for="reading-lamp">Reading Lamp</label>
                                </div>
                             </div>
-
-
                         </div>
                         <a href="#" class="view-more">View More..</a>
                     </div>
-
-                    <div class="col-md-12 form-btn d-flex flex-wrap">
-                       <button class="btn btn btn-default rounded" type="submit" @click.prevent="$parent.goStep(1)">Previous</button>
-                       <button class="btn btn btn-primary rounded text-white" type="submit" @click.prevent="">Save</button>
-                       <button class="btn btn btn-default rounded" type="submit" @click.prevent="$parent.goStep(3)">Next</button>
+                    <div class="row form-button">
+                       <button class="btn btn btn-default  mb-2" type="submit" @click.prevent="$parent.goStep(1)">Previous</button>
+                       <button class="btn btn btn-primary  mb-2 text-white" type="submit" @click.prevent="">Save</button>
+                       <button class="btn btn btn-default  mb-2" type="submit" @click.prevent="$parent.goStep(3)">Next</button>
                     </div>
 
                 </form>
@@ -116,6 +113,7 @@
     }
 </script>
 <style lang="scss" scoped>
+    @import "../../styles/variable";
     
     .form-group{
         label{

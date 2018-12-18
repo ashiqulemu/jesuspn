@@ -45,9 +45,17 @@
   }
 
 }
+.footer-brand{
+  @media(max-width: 768px){
+    margin: 0 auto;
+  }
+}
 .footer-para{
   padding-top: 20px;
   padding-bottom: 8px;
+      @media(max-width: 768px){
+        text-align: center;
+      }
 }
 
 .footer-bottom{

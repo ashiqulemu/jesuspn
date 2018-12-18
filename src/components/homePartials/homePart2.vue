@@ -18,7 +18,8 @@
             </div>
             <div class="col">
                 <div class="box text-white">
-                        ¿Eres solo-traveller?, quieres vivir la experiencia de compartir tu viaje con personas que tengan tus mismas afinidades e intereses.
+                        ¿Eres solo-traveller?, <span style=" color: rgb(228, 200, 199);"> quieres vivir la experiencia de compartir tu viaje con personas que tengan tus mismas afinidades e intereses.</span>
+                 
                 </div>
             </div>
         </div>
@@ -51,16 +52,24 @@
             justify-content: flex-start;
             align-items:center;
             padding-left: 50px;
+            @media (max-width: 768px){
+                justify-content: center!important;
+                text-align: center;
+            }
             .box{
-                max-height: 50%;
-                width: 46%;
                 font-size: 22px;
+                 width: 50%;
+                @media (max-width: 768px){
+                    width:100%;
+                 }
             }
         }
         .col:first-child{
             display: flex;
             justify-content: flex-end;
-            
+            @media (max-width: 768px){
+                justify-content: center!important;
+            }
             .box{
                 button{
                     width: 150px;
@@ -83,8 +92,8 @@
                 margin: 50px;
                 padding: 20px;
                 border: 1px solid #fdfdfd;
-                min-width: 45%;
-                max-width: 45%;
+                 min-width: 300px;
+                 max-width: 300px;
                 -webkit-box-pack: center;
                 -ms-flex-pack: center;
                 justify-content: center;
@@ -92,6 +101,7 @@
                 -ms-flex-align: center;
                 align-items: center;
                 box-shadow: 1px 3px 14px #5b5c5d45;
+                
             }
         }
     }
