@@ -39,7 +39,7 @@
 
                         <div class="col-md-12">
                             <hr>
-                            <h5 class="pb-3 pt-1">Room Amenities <span class="text-primary">{{amenitiesSelected.length}}</span></h5>
+                            <h5 class="pb-3 pt-1">Room Amenities <span class="text-primary">{{amenitiesTotal}}</span></h5>
                             <div class="amenities">
                                <div :class="{'amenities-box':true, 'active': amenitiesSelected[index]}" v-for="(amenity, index) in amenities">
                                    <input class="ameniti-select-box" type="checkbox" v-model="amenitiesSelected[index]">
@@ -95,6 +95,21 @@
 
             }
 
+        },
+        computed:{
+            amenitiesTotal(){
+                if(this.amenitiesSelected.length){
+                    let totalTrue = 0
+                    _.forEach(this.amenitiesSelected, (item)=>{
+                        if(item){
+                            totalTrue++
+                        }
+                    })
+                    return totalTrue
+                }else{
+                    return 0
+                }
+            }
         },
         created(){
             this.$parent.title='Please give us more details about rooms',
