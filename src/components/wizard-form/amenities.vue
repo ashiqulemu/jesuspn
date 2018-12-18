@@ -113,6 +113,7 @@
     .amenities{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         .amenities-box{
             display: flex;
             flex: 1;
@@ -122,10 +123,11 @@
             padding: 20px 0;
             margin-right: 20px;
             div{
-                height: 40px;
-                width: 40px;
+                height:50px;
+                width:50px;
                 background: #aaaaaa;
             }
+            
             &.is-active{
                 border: 1px solid #fe575f;
             }

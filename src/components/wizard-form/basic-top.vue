@@ -67,10 +67,13 @@
         display: flex;
         background:#F7F7F7;
         justify-content: space-between;
-        padding: 24px 0;
+        padding-left: 24px ;
+        padding-bottom:20px;
+        padding-right: 0;
         margin-top: 60px;
         margin-bottom: 60px;
         flex-wrap: wrap;
+        padding-top:30px;
         .items{
             flex: 1;
             min-width: 100px;

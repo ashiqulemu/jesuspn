@@ -4,6 +4,9 @@
   background-position-y: 70px;
   background-repeat: no-repeat;
   border-top: 1px solid #EDEDED;
+    @media (max-width: 768px){
+      background-position-y: 100%;
+    }
 }
 .column-title{
   font-size: 15px;
