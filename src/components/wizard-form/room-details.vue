@@ -39,27 +39,11 @@
 
                         <div class="col-md-12">
                             <hr>
-                            <h5 class="pb-3 pt-1">Room Amenities <span class="text-primary">0</span></h5>
+                            <h5 class="pb-3 pt-1">Room Amenities <span class="text-primary">{{amenitiesSelected.length}}</span></h5>
                             <div class="amenities">
-                               <div class="amenities-box">
-                                   <input class="ameniti-select-box" type="checkbox" name="" id="tv-set">
-                                   <label for="tv-set">Tv Set</label>
-                               </div>
-                               <div class="amenities-box">
-                                   <input class="ameniti-select-box" type="checkbox" name="" id="hangers">
-                                   <label for="hangers">Hangers</label>
-                               </div>
-                               <div class="amenities-box">
-                                   <input class="ameniti-select-box" type="checkbox" name="" id="closet">
-                                   <label for="closet">Closet</label>
-                               </div>
-                               <div class="amenities-box">
-                                   <input class="ameniti-select-box" type="checkbox" name="" id="mirror">
-                                   <label for="mirror">Mirror</label>
-                               </div>
-                               <div class="amenities-box">
-                                   <input class="ameniti-select-box" type="checkbox" name="" id="reading-lamp">
-                                   <label for="reading-lamp">Reading Lamp</label>
+                               <div :class="{'amenities-box':true, 'active': amenitiesSelected[index]}" v-for="(amenity, index) in amenities">
+                                   <input class="ameniti-select-box" type="checkbox" v-model="amenitiesSelected[index]">
+                                   <label>{{amenity}}</label>
                                </div>
                             </div>
 
@@ -103,7 +87,14 @@
     export default{
         data(){
             return{
-
+                amenities:[
+                    'Tv Set',
+                    'Hangers',
+                    'Closet',
+                    'Mirror',
+                    'Reading Lamp'
+                ],
+                amenitiesSelected:[]
 
             }
 
@@ -176,6 +167,9 @@
             align-items: center;
         }
         .amenities-box{
+            &.active{
+                border: 3px solid #FE575F;
+            }
             @media (max-width: 768px){
                 margin-right:16px;
             }
