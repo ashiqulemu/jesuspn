@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <img src="../../../src/assets/images/logo_color_black.png">
-                    <p>
+                    <p class="footer-para">
                         We are an online marketplace platform for booking social group trips.
                         Our service is more affordable and convenient than hotel.
                     </p>
@@ -13,13 +13,13 @@
                 <div class="col-md-4">
                     <div class="row">
                         <div class="col">
-                            <h5>USEFUL LINKS</h5>
+                            <p class="column-title">USEFUL LINKS</p>
                             <a href="#">About Us</a>
                             <router-link :to="{name:'helpSupport'}">Help ?</router-link>
                             <router-link :to="{name:'contact'}">Contact Us</router-link>
                         </div>
                         <div class="col footer-terms">
-                            <h5 class="hide"></h5>
+                            <p class="column-title"> </p>
                             <router-link :to="{name:'termsCondition'}">Terms Of Use</router-link>
                             <a href="#">Privacy Policy</a>
                             <a href="#">Copyright Policy</a>
@@ -27,19 +27,19 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h5>LANGUAGE</h5>
-                    <select name="" id="" class="form-control">
+                    <p class="column-title  ">LANGUAGE</p>
+                    <select name="" id="" class=" d-block form-control">
                         <option value="engine">English</option>
                         <option value="spanish">Spanish</option>
                     </select>
                 </div>
             </div>
         </div>
-        <div class="container-fluid footer-bottom">
+        <div class="container-fluid footer-bottom"><br>
             <hr>
             <div class="row">
                 <div class="col-md-12">
-                    <p>All rights reserved to <span>Peer2Travel 2018.</span></p>
+                    <p>Designed by Robert Imeri.All right reserved to  <span>Peer2Travel 2018.</span></p>
                 </div>
             </div>
         </div>

@@ -12,12 +12,11 @@
 }
 .site-header .add-listing {
   border: 1px solid #f3f3f3;
-  padding: 4px 13px;
+  padding: 4px 9px;
   background: 0;
   color: #E7E7E7;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px;
+  transform: translateY(3px);
 }
 .site-header .user-icon {
   color: #fdfafa;

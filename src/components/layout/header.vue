@@ -13,7 +13,7 @@
                             aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+                    
                     <div class="collapse navbar-collapse" id="navbarsExample04">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
@@ -55,7 +55,7 @@
                             <li class="nav-item">
                                 <button class="add-listing">  + Add Listing </button>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item user">
                                 <a href="" class="nav-link">
                                     <i class="fa fa-user text-white nav"></i>
                                 </a>
@@ -65,7 +65,7 @@
                 </nav>
             </div>
         </section>
-
+    
     </div>
 </template>
 
@@ -75,8 +75,16 @@
     }
 </script>
 
-<style scoped>
-.nav .fa-user{
-    padding-left: 35px;
-}
+<style scoped lang="scss">
+    .nav-item{
+        &.user{
+            a{
+                i{
+                    transform: translateY(0);
+                    padding-left: 10px;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
 </style>
