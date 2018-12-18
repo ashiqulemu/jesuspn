@@ -296,7 +296,7 @@
                     <div class="col-md-4">
                         <div class="card" >
                             <div class="card-header euro text-right">
-                                <span class="euro">100€ - 100€</span><span>per night</span><span>?</span>
+                                <span class="euro">{{roomTypes[0].Small}}€ - {{roomTypes[2].Large}}€</span><span>per night</span><span>?</span>
                             </div>
                             <div class="card-body">
                                 <div class="form-group">
@@ -325,16 +325,16 @@
                                     <div class="list-group-item" style="border-top: none;">
                                         <div>
                                             <span>Room 1 Small {{totalPrice}}€*{{totalDay}} nights</span>
-                                            <span class="float-right">{{roomNumberPriceDay}}</span>
+                                            <span class="float-right">{{roomNumberPriceDay}}€</span>
                                         </div>
                                     </div>
                                     <div class="list-group-item">
-                                        <span>Discount(0%)</span>
-                                        <span class="float-right">0.00€</span>
+                                        <span>Discount({{discount}}%)</span>
+                                        <span class="float-right">{{discountTotal}}€</span>
                                     </div>
                                     <div class="list-group-item" style="border-bottom: none;">
                                         <span>Total</span>
-                                        <span class=" float-right text-primary">200€</span>
+                                        <span class=" float-right text-primary">{{withDiscountTotal}}€</span>
                                     </div>
                                     <div class="form-group text-center">
                                         
@@ -384,6 +384,16 @@
         },
 
         computed:{
+            withDiscountTotal(){
+                return this.roomNumberPriceDay - this.discountTotal
+            },
+            discountTotal(){
+                if(this.roomNumberPriceDay){
+                    return this.roomNumberPriceDay*this.discount/100
+                }else{
+                    return 0
+                }
+            },
             roomNumberPriceDay(){
                 if(this.totalDay && this.totalPrice){
                     let price  = this.totalPrice
