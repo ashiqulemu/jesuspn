@@ -60,9 +60,20 @@
   }
 }
 .footerLastColumn{
-    .column-title{
+
+  @media only screen and (max-width: 767px){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .column-title{
         transform: translateX(-18px);
         text-align: center;
+        @media only screen and (max-width: 767px){
+          transform: translateX(2px);
+          text-align: center;
+          margin-top: 1px;
+        }
     }
     .float-right.form-control{
       margin-top: 6px;
