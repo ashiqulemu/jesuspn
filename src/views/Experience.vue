@@ -645,7 +645,7 @@
                     dots: false,
                     arrows: false,
                     autoplay: true,
-                    focusOnSelect: false,
+                    focusOnSelect: true,
                     responsive: [
                         {
                             breakpoint: 1200,
