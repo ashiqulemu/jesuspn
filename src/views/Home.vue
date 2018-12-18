@@ -5,7 +5,7 @@
 
       <home-part2></home-part2>
 
-      <home-part3></home-part3>
+      <!--<home-part3></home-part3>-->
 
       <home-part4></home-part4>
 

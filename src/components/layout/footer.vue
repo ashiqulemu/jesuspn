@@ -11,18 +11,24 @@
                     <i class=" fa rounded-icon fa-facebook"></i>
                 </div>
                 <div class="col-md-4">
-                    <div class="row">
-                        <div class="col">
+                    <div class="row" v-if="this.$route.path!=='/'">
+                        <div class="col-md-6">
                             <p class="column-title">USEFUL LINKS</p>
                             <a href="#">About Us</a>
                             <router-link :to="{name:'helpSupport'}">Help ?</router-link>
                             <router-link :to="{name:'contact'}">Contact Us</router-link>
                         </div>
-                        <div class="col footer-terms">
+                        <div class="col-md-6 footer-terms">
                             <p class="column-title"> </p>
                             <router-link :to="{name:'termsCondition'}">Terms Of Use</router-link>
                             <a href="#">Privacy Policy</a>
                             <a href="#">Copyright Policy</a>
+                        </div>
+                    </div>
+                    <div class="row" v-else>
+                        <div class="col-md-12 text-center">
+                            <p class="text-primary"><strong>DON'T MISS THIS CHANCE</strong></p>
+                            <button class="btn btn-primary rounded">Start the trip now!</button>
                         </div>
                     </div>
                 </div>
@@ -51,7 +57,10 @@
 
 <script>
     export default {
-        name: "footers"
+        name: "footers",
+       
+        
+       
     }
 </script>
 

@@ -73,8 +73,8 @@
 
             </div>
             <div class="col-md-4">
-                <div class="row">
-                    <div class="col-md-12 basic-side">
+               
+                    <div class="col-md-12 basic-right">
                         <h5>Help Assistance</h5>
                         <h6>Easy to use</h6>
                         <p>Just a few steps add your accommodation</p>
@@ -83,7 +83,7 @@
                         <h6>Easy to use</h6>
                         <p>Service fee for single-listing: 0% commission.</p>
                     </div>
-                </div>
+               
             </div>
         </div>
 
@@ -110,6 +110,15 @@
     }
 </script>
 <style lang="scss" scoped>
+    
+    .basic-right{
+        border: 1px solid #EAEAEA;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        @media (min-width: 768px){
+            margin-left: 15px;
+        }
+    }
 
     .description-form{
         .form-group{
