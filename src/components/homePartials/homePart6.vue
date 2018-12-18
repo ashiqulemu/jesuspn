@@ -9,7 +9,7 @@
 			  <div>
 				  <div class="sub-head-section">
 					  <img src="../../../src/assets/images/logo_color_black.png" alt="">
-					  <h3>FREE</h3>
+					  <h3 class="text-primary " style="text-decoration: underline;font-weight: 500;">FREE</h3>
 				  </div>
 				  <p></p>
 				  <p class="package-list">Social Media verification and online reputation of travelers <span class="bullet">?</span> </p>

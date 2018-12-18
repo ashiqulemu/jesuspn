@@ -22,7 +22,7 @@
                 </div>
             </div>
             <br>
-            <button class="btn btn btn-primary">Start the trip!</button>
+            <button class="btn btn btn-primary rounded">Start the trip!</button>
         </div>
     </div>
 </template>
