@@ -6,27 +6,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="card" >
-                            
-                            <div class="gallery-preview">
-                                <h4>Gallery</h4>
-                                <div id="resgallery">
-                                    <div><img src="http://placehold.it/850x370" alt="" /></div>
-                                    <div><img src="http://placehold.it/850x370" alt="" /></div>
-                                    <div><img src="http://placehold.it/850x370" alt="" /></div>
-                                    <div><img src="http://placehold.it/850x370" alt="" /></div>
-                                    <div><img src="http://placehold.it/850x370" alt="" /></div>
-                                    <div><img src="http://placehold.it/850x370" alt="" /></div>
-                                </div>
-                                <br>
-                                <div id="resthumb">
-                                    <div><img src="http://placehold.it/160x115" alt="" /></div>
-                                    <div><img src="http://placehold.it/160x115" alt="" /></div>
-                                    <div><img src="http://placehold.it/160x115" alt="" /></div>
-                                    <div><img src="http://placehold.it/160x115" alt="" /></div>
-                                    <div><img src="http://placehold.it/160x115" alt="" /></div>
-                                    <div><img src="http://placehold.it/160x115" alt="" /></div>
-                                </div>
-                            </div>
+                            <product-gallery></product-gallery>
                         </div>
                         <br>
                         <div class="card-header description" style="border-bottom: none">
@@ -359,10 +339,10 @@
 
 <script>
     import Datepicker from 'vuejs-datepicker'
-
+    import productGallery from '../components/experiencePartials/productGallery.vue'
     export default {
         name: "experience",
-        components:{Datepicker},
+        components:{Datepicker, productGallery},
         data(){
             return{
                 name:"Niklesh Raut",
@@ -423,7 +403,6 @@
 
         mounted(){
             this.googleMap()
-            this.slickSlider()
         },
         methods:{
 
@@ -630,73 +609,7 @@
                     icon: image // This path is the custom pin to be shown. Remove this line and the proceeding comma to use default pin
                 });
             },
-            slickSlider(){
-                $('#resgallery').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: true,
-                    fade: false,
-                    asNavFor: '#resthumb'
-                });
-                $('#resthumb').slick({
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    asNavFor: '#resgallery',
-                    dots: false,
-                    arrows: false,
-                    autoplay: true,
-                    focusOnSelect: true,
-                    responsive: [
-                        {
-                            breakpoint: 1200,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 1,
-                                infinite: true,
-                                centerMode: true,
-                                centerPadding: '60px',
-                                dots: false
-                            }
-                        },
-                        {
-                            breakpoint: 980,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 1,
-                                infinite: true,
-                                centerMode: true,
-                                centerPadding: '50px',
-                                dots: false
-                            }
-                        },
-                        {
-                            breakpoint: 767,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 1,
-                                infinite: true,
-                                centerMode: true,
-                                centerPadding: '70px',
-                                dots: false
-                            }
-                        },
-                        {
-                            breakpoint: 520,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 1,
-                                infinite: true,
-                                centerMode: true,
-                                centerPadding: '0px',
-                                dots: false
-                            }
-                        }
-                    ]
-                });
 
-                $('.slick-prev.slick-arrow').css({"left": "10px", "z-index":"99999"})
-                $('.slick-next.slick-arrow').css({"right": "10px", "z-index":"99999"})
-            }
         }
     }
 </script>
