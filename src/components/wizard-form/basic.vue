@@ -114,6 +114,10 @@
     .basic-right{
         border: 1px solid #EAEAEA;
         padding: 20px 30px;
+        margin-bottom: 30px;
+        @media (min-width: 768px){
+            margin-left: 15px;
+        }
     }
     .basic-form{
         .form-group{

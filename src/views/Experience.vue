@@ -618,12 +618,11 @@
     .review-input .form-control::-webkit-input-placeholder {
         color: #A2A2A2 !important;
         font-size:16px;
-        font-weight: 400px;
+        font-weight: 400;
     }
     
     .btn-review{
         border: 1px solid #b4c52c;
-        color: btn-revie;
         background: transparent;
         color: #b4c52c;
         font-weight: 500;
@@ -719,13 +718,9 @@
             margin-bottom: 20px;
         }
         padding:30px;
-        #resthumb{
-            /*padding-left: 20px;*/
-        }
     }
     .experience{
         padding: 51px 0;
-        
     }
     .active{
         color: #fe575f;

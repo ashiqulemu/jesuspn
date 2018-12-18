@@ -4,6 +4,9 @@
   background-position-y: 70px;
   background-repeat: no-repeat;
   border-top: 1px solid #EDEDED;
+    @media (max-width: 768px){
+      background-position-y: 100%;
+    }
 }
 .column-title{
   font-size: 15px;
@@ -60,15 +63,24 @@
   }
 }
 .footerLastColumn{
-  @media (max-width: 767px){
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  transform: translateX(20px);
-}
-   .column-title{
-     text-align: center;
-     transform: translateX(-28px);
 
-   }
+  @media only screen and (max-width: 767px){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .column-title{
+        transform: translateX(-18px);
+        text-align: center;
+        @media only screen and (max-width: 767px){
+          transform: translateX(2px);
+          text-align: center;
+          margin-top: 1px;
+        }
+    }
+    .float-right.form-control{
+      margin-top: 6px;
+    }
+
+
 }

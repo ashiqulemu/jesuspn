@@ -140,6 +140,9 @@
         button{
             margin-right: 20px;
             padding: 5px 40px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #343434;
         }
     }
 
