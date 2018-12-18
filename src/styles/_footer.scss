@@ -60,15 +60,13 @@
   }
 }
 .footerLastColumn{
-  @media (max-width: 767px){
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  transform: translateX(20px);
-}
-   .column-title{
-     text-align: center;
-     transform: translateX(-28px);
+    .column-title{
+        transform: translateX(-18px);
+        text-align: center;
+    }
+    .float-right.form-control{
+      margin-top: 6px;
+    }
 
-   }
+
 }
