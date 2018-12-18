@@ -322,7 +322,7 @@
                                 </div>
                                 
                                 <div class="list-group-flush">
-                                    <div class="list-group-item" style="border-top: none;">
+                                    <div class="list-group-item" style="border-top: none; font-size: 15px">
                                         <div>
                                             <span>Room 1 Small {{totalPrice}}€*{{totalDay}} nights</span>
                                             <span class="float-right">{{roomNumberPriceDay}}€</span>
@@ -645,7 +645,7 @@
                     dots: false,
                     arrows: false,
                     autoplay: true,
-                    focusOnSelect: false,
+                    focusOnSelect: true,
                     responsive: [
                         {
                             breakpoint: 1200,
@@ -815,5 +815,8 @@
     #map {
         height:270px;
         width: 100%;
+    }
+    .btn-circle{
+        right: 39px;
     }
 </style>
