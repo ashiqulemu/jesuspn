@@ -821,4 +821,7 @@
         height:270px;
         width: 100%;
     }
+    .btn-circle{
+        right: 39px;
+    }
 </style>
