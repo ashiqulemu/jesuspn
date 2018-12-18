@@ -41,9 +41,9 @@
                             <hr>
                             <h5 class="pb-3 pt-1">Room Amenities <span class="text-primary">{{amenitiesTotal}}</span></h5>
                             <div class="amenities">
-                               <div :class="{'amenities-box':true, 'active': amenitiesSelected[index]}" v-for="(amenity, index) in amenities">
+                               <div :class="{'amenities-box':true, 'active': amenitiesSelected[index]}" v-for="(amenity, index) in amenities" :id="amenity.toLowerCase().replace(' ', '_')">
                                    <input class="ameniti-select-box" type="checkbox" v-model="amenitiesSelected[index]">
-                                   <label>{{amenity}}</label>
+                                   <label :for="amenity.toLowerCase().replace(' ', '_')">{{amenity}}</label>
                                </div>
                             </div>
                         </div>

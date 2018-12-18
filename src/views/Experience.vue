@@ -302,7 +302,7 @@
                                 </div>
                                 
                                 <div class="list-group-flush">
-                                    <div class="list-group-item" style="border-top: none; font-size: 15px">
+                                    <div class="list-group-item" style="border-top: none; font-size: 14px">
                                         <div>
                                             <span>Room {{roomNumber}} {{Object.keys(roomType).join(',')}} {{totalPrice}}€*{{totalDay}} nights</span>
                                             <span class="float-right">{{roomNumberPriceDay}}€</span>
